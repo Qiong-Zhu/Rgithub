@@ -167,7 +167,9 @@ out <- gsynth(turnout ~ policy_edr + policy_mail_in + policy_motor, parallel = T
 plot(out, type = "missing", xlab = "Year", ylab = "State", main = "Treatment Status")
 
 plot(out, type = "missing", xlab = "Year", ylab = "State", main = "Treatment Status",
-     id = out$id.tr, xlim = c(1920,2010),  axis.adjust=TRUE)
+     id = out$id.tr, xlim = c(1920,1990),  axis.adjust=TRUE)
 
 plot(out, type = "gap")
+
+### add another line 
 
